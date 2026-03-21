@@ -1,104 +1,93 @@
 import { Link } from "react-router-dom";
+import { ArrowRight, BookOpen } from "lucide-react";
 import hervePortrait from "@/assets/herve-portrait.png";
-import hexLogo from "@/assets/hex-logo.png";
 
 const HeroSection = () => {
-  const tags = ["Nonclinical Safety", "Program Strategy", "Study Design", "Regulatory Support"];
-
   return (
-    <section className="relative bg-hero-gradient min-h-screen pt-32 sm:pt-36 pb-16 overflow-hidden">
+    <section className="relative bg-hero-gradient min-h-[85vh] pt-28 sm:pt-32 pb-12 overflow-hidden">
       {/* Subtle hex grid background */}
-      <div className="absolute inset-0 opacity-[0.04]" style={{
+      <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L52 17.5 L52 42.5 L30 55 L8 42.5 L8 17.5Z' fill='none' stroke='%2322d3ee' stroke-width='0.5'/%3E%3C/svg%3E")`,
         backgroundSize: '60px 60px',
       }} />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-5 gap-12 items-center min-h-[calc(100vh-12rem)]">
-          {/* Left content — 3 cols */}
-          <div className="lg:col-span-3 space-y-8 mt-4 sm:mt-0">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          {/* Left content — 7 cols */}
+          <div className="lg:col-span-7 space-y-6">
             <p
-              className="text-cyan text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
+              className="text-[hsl(var(--cyan))] text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
               style={{ animationDelay: "100ms" }}
             >
-              Science-Led Consulting for Next-Gen Therapeutics
+              Nonclinical Safety Consulting
             </p>
 
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] text-foreground opacity-0 animate-fade-up"
-              style={{ animationDelay: "200ms" }}
+              className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.1] text-foreground opacity-0 animate-fade-up"
+              style={{ animationDelay: "200ms", textWrap: "balance" }}
             >
-              Expert Consulting Solutions for Pharma and Biotech
+              Guiding pharma &amp; biotech through nonclinical development—from first-in-human to approval
             </h1>
 
-            <p
-              className="text-foreground font-semibold text-lg leading-relaxed max-w-2xl opacity-0 animate-fade-up"
-              style={{ animationDelay: "350ms" }}
-            >
-              HL Toxicology & Preclinical Services provides tailored consulting in nonclinical
-              safety assessment for investigational therapies—covering strategy, study
-              design and oversight, regulatory documents, and health authority interactions.
-            </p>
-
-            {/* Tags */}
+            {/* Trust signals */}
             <div
-              className="flex flex-wrap gap-3 opacity-0 animate-fade-up"
-              style={{ animationDelay: "450ms" }}
+              className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground opacity-0 animate-fade-up"
+              style={{ animationDelay: "300ms" }}
             >
-              {tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-sm border border-foreground/25 rounded-full px-4 py-1.5 text-foreground/80"
-                >
-                  {tag}
-                </span>
-              ))}
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--cyan))]" />
+                Former Amgen &amp; Sonoma leader
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--cyan))]" />
+                PharmD · PhD · DABT
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--cyan))]" />
+                60+ peer-reviewed publications
+              </span>
             </div>
 
-            {/* CTA buttons */}
+            <p
+              className="text-muted-foreground text-base leading-relaxed max-w-xl opacity-0 animate-fade-up"
+              style={{ animationDelay: "380ms" }}
+            >
+              HL Toxicology provides expert consulting in nonclinical safety
+              assessment—strategy, study design, regulatory documents, and health
+              authority interactions for investigational therapies.
+            </p>
+
+            {/* CTAs */}
             <div
-              className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4 pt-2 opacity-0 animate-fade-up"
-              style={{ animationDelay: "550ms" }}
+              className="flex flex-wrap gap-3 pt-1 opacity-0 animate-fade-up"
+              style={{ animationDelay: "460ms" }}
             >
               <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-xs sm:text-sm rounded-full px-4 sm:px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--cyan))] text-[hsl(var(--navy-deep))] font-semibold text-sm rounded-full px-7 py-2.5 hover:brightness-110 transition-all duration-200 active:scale-[0.97] shadow-[0_0_20px_hsl(var(--cyan)/0.25)]"
               >
-                <span className="text-[1.3em]">🔍</span> Explore Services
+                Schedule a Consultation
+                <ArrowRight className="w-4 h-4" />
               </a>
               <Link
                 to="/bio"
-                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-xs sm:text-sm rounded-full px-4 sm:px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 border border-border text-muted-foreground font-medium text-sm rounded-full px-6 py-2.5 hover:text-foreground hover:border-foreground/30 transition-all duration-200 active:scale-[0.97]"
               >
-                <span className="text-[1.3em]">🤝</span> Meet Hervé
+                About Hervé
               </Link>
             </div>
           </div>
 
-          {/* Right — portrait with hex frame */}
+          {/* Right — portrait, tighter */}
           <div
-            className="lg:col-span-2 flex flex-col items-center justify-center gap-6 opacity-0 animate-fade-up"
-            style={{ animationDelay: "400ms" }}
+            className="lg:col-span-5 flex flex-col items-center justify-center gap-4 opacity-0 animate-fade-up"
+            style={{ animationDelay: "350ms" }}
           >
-            {/* Credential badge */}
-            <div className="flex justify-center mb-2">
-              <Link
-                to="/publications"
-                className="bg-secondary text-foreground text-xs font-semibold px-4 py-1.5 rounded-full hover:bg-secondary/80 transition-colors duration-200"
-              >
-                60 publications
-              </Link>
-            </div>
-
             {/* Hex portrait */}
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 mx-auto">
-              {/* Glow behind */}
-              <div className="absolute inset-[-12px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))] opacity-40 blur-md" />
-              {/* Gradient border */}
-              <div className="absolute inset-[-6px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))]" />
-              {/* Background fill */}
+            <div className="relative w-52 h-52 sm:w-60 sm:h-60 mx-auto">
+              <div className="absolute inset-[-10px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))] opacity-35 blur-md" />
+              <div className="absolute inset-[-5px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))]" />
               <div className="absolute inset-0 hex-clip bg-background" />
-              {/* Portrait */}
               <img
                 src={hervePortrait}
                 alt="Hervé Lebrec, PharmD, PhD, DABT"
@@ -106,15 +95,27 @@ const HeroSection = () => {
               />
             </div>
 
-            {/* Name */}
+            {/* Name & title */}
             <div className="text-center">
-              <h2 className="text-foreground font-bold text-xl sm:text-2xl">
-                Hervé Lebrec, PharmD, PhD, DABT
+              <h2 className="text-foreground font-bold text-lg sm:text-xl">
+                Hervé Lebrec
               </h2>
-              <p className="text-emerald-400 text-sm mt-1">
-                Former Amgen and Sonoma Biotherapeutics leader
+              <p className="text-muted-foreground text-sm mt-0.5">
+                PharmD, PhD, DABT
+              </p>
+              <p className="text-emerald-400 text-xs mt-1.5 font-medium">
+                15+ years industry leadership at Amgen &amp; Sonoma Bio
               </p>
             </div>
+
+            {/* Publications link */}
+            <Link
+              to="/publications"
+              className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              View publications →
+            </Link>
           </div>
         </div>
       </div>
