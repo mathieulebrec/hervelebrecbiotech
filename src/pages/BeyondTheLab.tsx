@@ -31,10 +31,22 @@ const BeyondTheLab = () => {
             </p>
           </div>
 
+          {/* Sailing photo */}
+          <div
+            className="max-w-2xl mx-auto mb-10 opacity-0 animate-fade-up"
+            style={{ animationDelay: "300ms" }}
+          >
+            <img
+              src={herveSailing}
+              alt="Hervé sailing on the open water"
+              className="w-full rounded-2xl object-cover max-h-[400px]"
+            />
+          </div>
+
           {/* Logo section */}
           <div
             className="max-w-2xl mx-auto opacity-0 animate-fade-up"
-            style={{ animationDelay: "350ms" }}
+            style={{ animationDelay: "400ms" }}
           >
             <div className="bg-card/60 border border-border/40 rounded-2xl p-10 sm:p-14 flex flex-col items-center gap-10">
               <img
