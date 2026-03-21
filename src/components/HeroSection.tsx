@@ -57,18 +57,18 @@ const HeroSection = () => {
 
             {/* CTA buttons */}
             <div
-              className="flex flex-wrap gap-4 pt-2 opacity-0 animate-fade-up"
+              className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4 pt-2 opacity-0 animate-fade-up"
               style={{ animationDelay: "550ms" }}
             >
               <a
                 href="#services"
-                className="inline-flex items-center gap-2 border-2 border-cyan text-cyan font-semibold text-sm rounded-full px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-sm rounded-full px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
               >
                 Explore Services
               </a>
               <Link
                 to="/bio"
-                className="inline-flex items-center gap-2 bg-secondary text-foreground font-medium text-sm rounded-full px-7 py-2.5 hover:bg-secondary/80 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-sm rounded-full px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
               >
                 <span className="text-[1.3em]">🤝</span> Meet Hervé
               </Link>
