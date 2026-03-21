@@ -32,7 +32,7 @@ const ServicesSection = () => {
               style={{ animationDelay: `${600 + i * 100}ms` }}
             >
               <p className="text-cyan text-xs font-bold tracking-[0.2em] uppercase mb-4">
-                {s.num} · {s.label}
+                <span className="text-base mr-1.5">✅</span> {s.label}
               </p>
               <h3 className="text-card-surface-foreground font-bold text-xl mb-3 leading-snug">
                 {s.title}
