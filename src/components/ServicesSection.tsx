@@ -47,7 +47,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="relative bg-hero-gradient py-24 scroll-mt-28">
+    <section id="services" className="relative bg-hero-gradient py-14 scroll-mt-28">
       <div className="container mx-auto px-6">
         {/* Section header */}
         <div className="max-w-2xl mb-14">
