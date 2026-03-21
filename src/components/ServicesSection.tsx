@@ -50,7 +50,7 @@ const ServicesSection = () => {
     <section id="services" className="relative bg-hero-gradient py-14 scroll-mt-28">
       <div className="container mx-auto px-6">
         {/* Section header */}
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-2xl mb-8">
           <p
             className="text-primary text-xs font-semibold tracking-[0.25em] uppercase mb-4 opacity-0 animate-fade-up"
             style={{ animationDelay: "100ms" }}
