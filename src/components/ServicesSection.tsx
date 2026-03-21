@@ -23,6 +23,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="relative bg-hero-gradient py-20">
       <div className="container mx-auto px-6">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12 opacity-0 animate-fade-up">Services Offered</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((s, i) => (
             <div
