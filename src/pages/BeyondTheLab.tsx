@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
 import hexLogo from "@/assets/hex-logo-original.png";
+import herveSailing from "@/assets/herve-sailing.jpg";
 
 const BeyondTheLab = () => {
   return (
