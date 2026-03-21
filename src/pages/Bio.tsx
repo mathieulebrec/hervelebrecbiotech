@@ -104,7 +104,7 @@ const BioPage = () => {
               Professional Timeline
             </p>
             <h1
-              className="text-4xl sm:text-5xl font-bold text-foreground leading-[1.1] opacity-0 animate-fade-up"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1] opacity-0 animate-fade-up whitespace-nowrap"
               style={{ animationDelay: "180ms" }}
             >
               Hervé Lebrec, PharmD, PhD,&nbsp;DABT
