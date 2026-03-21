@@ -90,15 +90,18 @@ const HeroSection = () => {
             </div>
 
             {/* Hex portrait */}
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64">
-              {/* Outer glow ring */}
-              <div className="absolute inset-[-8px] hex-clip bg-gradient-to-br from-cyan to-purple-accent opacity-50 blur-sm" />
-              <div className="absolute inset-[-4px] hex-clip bg-gradient-to-br from-cyan to-purple-accent" />
+            <div className="relative w-56 h-56 sm:w-64 sm:h-64 mx-auto">
+              {/* Glow behind */}
+              <div className="absolute inset-[-12px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))] opacity-40 blur-md" />
+              {/* Gradient border */}
+              <div className="absolute inset-[-6px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))]" />
+              {/* Background fill */}
               <div className="absolute inset-0 hex-clip bg-background" />
+              {/* Portrait */}
               <img
                 src={hervePortrait}
                 alt="Hervé Lebrec, PharmD, PhD, DABT"
-                className="absolute inset-[4px] hex-clip object-cover"
+                className="absolute inset-[3px] hex-clip object-cover object-center w-[calc(100%-6px)] h-[calc(100%-6px)]"
               />
             </div>
 
