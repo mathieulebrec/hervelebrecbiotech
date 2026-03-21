@@ -244,6 +244,8 @@ const BioPage = () => {
           })}
         </div>
       </div>
+      </div>
+      <FooterBar />
     </div>
   );
 };
