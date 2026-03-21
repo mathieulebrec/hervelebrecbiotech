@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hervePortrait from "@/assets/herve-portrait.png";
 
 const HeroSection = () => {
