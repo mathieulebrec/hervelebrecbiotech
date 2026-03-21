@@ -27,7 +27,7 @@ const BeyondTheLab = () => {
               className="text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up"
               style={{ animationDelay: "250ms" }}
             >
-              Inspired by the ocean, wind and navigation, we navigate complexity in biotechnology—charting clear, confident paths that bring innovative therapies to life.
+              Inspired by the ocean, wind, and navigation, we guide complexity in biotechnology—charting clear, confident paths that bring innovative therapies to life.
             </p>
           </div>
 
