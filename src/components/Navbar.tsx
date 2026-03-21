@@ -11,7 +11,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const links = [
-    { label: "Home", to: "/" },
+    { label: "Sail Home", to: "/" },
     { label: "Founder Bio", to: "/bio" },
     { label: "Publications", to: "/publications" },
     { label: "Beyond the Lab", to: "/beyond-the-lab" },
