@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { GraduationCap, FlaskConical, ShieldCheck, TrendingUp, Users, Atom } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
+import logo3m from "@/assets/logo-3m.png";
+import logoAmgen from "@/assets/logo-amgen.png";
+import logoSanofi from "@/assets/logo-sanofi.png";
 
 const timelineData = [
   {
