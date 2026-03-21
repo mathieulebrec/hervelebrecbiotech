@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hexLogo from "@/assets/hex-logo.png";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const links = [
@@ -10,17 +10,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <Link to="/" className="flex items-center gap-3">
-          <img src={hexLogo} alt="HL Toxicology logo" className="w-10 h-10" />
-          <div className="leading-tight">
-            <div className="text-foreground font-bold tracking-wider text-sm uppercase">
-              HL Toxicology
-            </div>
-            <div className="text-muted-foreground text-xs tracking-widest uppercase">
-              & Preclinical Services
-            </div>
-          </div>
+      <div className="container mx-auto flex items-center justify-between py-3 px-6">
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="HL Toxicology & Preclinical Services" className="h-10" />
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
