@@ -5,7 +5,7 @@ const Navbar = () => {
   const links = [
     { label: "Home", to: "/" },
     { label: "Bio", to: "/bio" },
-    { label: "Publications", to: "#publications" },
+    { label: "Publications", to: "/publications" },
   ];
 
   return (
