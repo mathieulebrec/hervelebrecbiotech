@@ -135,22 +135,22 @@ const BioPage = () => {
 
           {/* Company logos */}
           <div className="mb-8 pb-4 opacity-0 animate-fade-up max-w-3xl mx-auto" style={{ animationDelay: "380ms" }}>
-            <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8 pl-[4.5rem] sm:pl-[5.5rem]">Previous Experience</p>
-            <div className="flex items-center justify-center gap-12 sm:gap-16 pl-[4.5rem] sm:pl-[5.5rem]">
+            <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8 sm:pl-[5.5rem]">Previous Experience</p>
+            <div className="flex items-center justify-center gap-4 sm:gap-16 sm:pl-[5.5rem] flex-wrap">
               <div className="flex flex-col items-center gap-2">
-                <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logo3m} alt="3M" className="scale-[1.3] object-contain" />
                 </a>
                 <p className="text-muted-foreground text-xs text-center">Oct 2005 – Aug 2006</p>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <a href="https://www.amgen.com/science?_gl=1*g2ja7s*_up*MQ..*_ga*MTU2NjExNzYuMTc3NDEyMTQ5Mg..*_ga_CBMSV0J9VL*czE3NzQxMjE0OTIkbzEkZzEkdDE3NzQxMjE1MzIkajIwJGwwJGgw" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 hover:shadow-lg transition-shadow duration-200">
+                <a href="https://www.amgen.com/science?_gl=1*g2ja7s*_up*MQ..*_ga*MTU2NjExNzYuMTc3NDEyMTQ5Mg..*_ga_CBMSV0J9VL*czE3NzQxMjE0OTIkbzEkZzEkdDE3NzQxMjE1MzIkajIwJGwwJGgw" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 hover:shadow-lg transition-shadow duration-200">
                   <img src={logoAmgen} alt="Amgen" className="max-h-full max-w-full object-contain" />
                 </a>
                 <p className="text-muted-foreground text-xs text-center">Sep 2006 – Oct 2021</p>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <a href="https://sonomabio.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <a href="https://sonomabio.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="scale-[1.3] object-contain" />
                 </a>
                 <p className="text-muted-foreground text-xs text-center">Oct 2021 – Feb 2026</p>
