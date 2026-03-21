@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { GraduationCap, FlaskConical, ShieldCheck, TrendingUp, Users, Atom } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
@@ -82,6 +83,10 @@ const expertiseTags = [
 ];
 
 const BioPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
