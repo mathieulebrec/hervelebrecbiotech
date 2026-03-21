@@ -134,7 +134,7 @@ const BioPage = () => {
           </div>
 
           {/* Company logos */}
-          <div className="mb-16 pb-8 opacity-0 animate-fade-up" style={{ animationDelay: "380ms" }}>
+          <div className="mb-8 pb-4 opacity-0 animate-fade-up" style={{ animationDelay: "380ms" }}>
             <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8">Previous Experience</p>
             <div className="flex items-center justify-center gap-12 sm:gap-16">
               <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24">
