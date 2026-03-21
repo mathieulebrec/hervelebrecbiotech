@@ -79,14 +79,14 @@ const HeroSection = () => {
             className="lg:col-span-2 flex flex-col items-center justify-center gap-6 opacity-0 animate-fade-up"
             style={{ animationDelay: "400ms" }}
           >
-            {/* Credential badges */}
-            <div className="flex gap-3 mb-2">
-              <span className="bg-secondary text-foreground text-xs font-semibold px-4 py-1.5 rounded-full">
-                DABT
-              </span>
-              <span className="bg-secondary text-foreground text-xs font-semibold px-4 py-1.5 rounded-full">
+            {/* Credential badge */}
+            <div className="flex justify-center mb-2">
+              <Link
+                to="/publications"
+                className="bg-secondary text-foreground text-xs font-semibold px-4 py-1.5 rounded-full hover:bg-secondary/80 transition-colors duration-200"
+              >
                 60 publications
-              </span>
+              </Link>
             </div>
 
             {/* Hex portrait */}
