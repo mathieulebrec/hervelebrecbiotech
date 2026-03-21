@@ -137,9 +137,9 @@ const BioPage = () => {
           <div className="mb-16 pb-8 opacity-0 animate-fade-up" style={{ animationDelay: "380ms" }}>
             <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8">Previous Experience</p>
             <div className="flex items-center justify-center gap-12 sm:gap-16">
-              <img src={logo3m} alt="3M" className="h-12 sm:h-14 object-contain" />
-              <img src={logoAmgen} alt="Amgen" className="h-10 sm:h-12 object-contain" />
-              <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="h-10 sm:h-12 object-contain" />
+              <img src={logo3m} alt="3M" className="h-16 sm:h-[72px] object-contain" />
+              <img src={logoAmgen} alt="Amgen" className="h-14 sm:h-16 object-contain" />
+              <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="h-14 sm:h-16 object-contain" />
             </div>
           </div>
 
