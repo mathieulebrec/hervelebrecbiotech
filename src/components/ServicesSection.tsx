@@ -80,7 +80,7 @@ const ServicesSection = () => {
             return (
               <article
                 key={s.label}
-                className="card-service p-8 group hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 opacity-0 animate-fade-up flex flex-col"
+                className="card-service p-6 group hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 opacity-0 animate-fade-up flex flex-col"
                 style={{ animationDelay: `${400 + i * 100}ms` }}
               >
                 {/* Icon + label */}
