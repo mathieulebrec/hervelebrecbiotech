@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import hervePortrait from "@/assets/herve-portrait.png";
+import hexLogo from "@/assets/hex-logo.png";
 
 const HeroSection = () => {
   const tags = ["Nonclinical Safety", "Program Strategy", "Study Design", "Regulatory Support"];
