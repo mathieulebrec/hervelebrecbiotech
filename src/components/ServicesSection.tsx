@@ -47,10 +47,10 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="relative bg-hero-gradient py-24 scroll-mt-28">
+    <section id="services" className="relative bg-hero-gradient py-14 scroll-mt-28">
       <div className="container mx-auto px-6">
         {/* Section header */}
-        <div className="max-w-2xl mb-14">
+        <div className="max-w-2xl mb-8">
           <p
             className="text-primary text-xs font-semibold tracking-[0.25em] uppercase mb-4 opacity-0 animate-fade-up"
             style={{ animationDelay: "100ms" }}
@@ -80,11 +80,11 @@ const ServicesSection = () => {
             return (
               <article
                 key={s.label}
-                className="card-service p-8 group hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 opacity-0 animate-fade-up flex flex-col"
+                className="card-service p-6 group hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 opacity-0 animate-fade-up flex flex-col"
                 style={{ animationDelay: `${400 + i * 100}ms` }}
               >
                 {/* Icon + label */}
-                <div className="flex items-center gap-3 mb-5">
+                <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
@@ -99,12 +99,12 @@ const ServicesSection = () => {
                 </h3>
 
                 {/* Value statement */}
-                <p className="text-card-surface-foreground/80 text-sm font-medium mb-5">
+                <p className="text-card-surface-foreground/80 text-sm font-medium mb-3">
                   {s.value}
                 </p>
 
                 {/* Deliverables */}
-                <ul className="space-y-2 mb-6 flex-1">
+                <ul className="space-y-1.5 mb-4 flex-1">
                   {s.deliverables.map((d) => (
                     <li key={d} className="flex items-start gap-2 text-sm text-card-surface-foreground/60 leading-relaxed">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
