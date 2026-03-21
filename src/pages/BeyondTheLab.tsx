@@ -9,7 +9,7 @@ const BeyondTheLab = () => {
       <div className="bg-hero-gradient pt-28 pb-20">
         <div className="container mx-auto px-6">
           {/* Header */}
-          <div className="max-w-3xl mx-auto mb-16 space-y-5 text-center">
+          <div className="max-w-3xl mx-auto mb-8 space-y-4 text-center">
             <p
               className="text-primary text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
               style={{ animationDelay: "100ms" }}
