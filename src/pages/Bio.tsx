@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
 import logo3m from "@/assets/logo-3m.png";
 import logoAmgen from "@/assets/logo-amgen.png";
-import logoSanofi from "@/assets/logo-sanofi.png";
+import logoSonoma from "@/assets/logo-sonoma.png";
 
 const timelineData = [
   {
@@ -133,6 +133,16 @@ const BioPage = () => {
             </div>
           </div>
 
+          {/* Company logos */}
+          <div className="mb-16 pb-8 opacity-0 animate-fade-up" style={{ animationDelay: "380ms" }}>
+            <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8">Previous Experience</p>
+            <div className="flex items-center justify-center gap-12 sm:gap-16">
+              <img src={logo3m} alt="3M" className="h-12 sm:h-14 object-contain" />
+              <img src={logoAmgen} alt="Amgen" className="h-10 sm:h-12 object-contain" />
+              <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="h-10 sm:h-12 object-contain" />
+            </div>
+          </div>
+
           {/* Sequential timeline */}
           <div className="relative max-w-3xl mx-auto">
             {/* Vertical line */}
@@ -146,7 +156,7 @@ const BioPage = () => {
                   <div
                     key={item.title}
                     className="relative flex gap-5 sm:gap-7 items-start opacity-0 animate-fade-up"
-                    style={{ animationDelay: `${400 + i * 120}ms` }}
+                    style={{ animationDelay: `${500 + i * 120}ms` }}
                   >
                     {/* Step number + icon column */}
                     <div className="flex flex-col items-center shrink-0 z-10">
@@ -154,14 +164,12 @@ const BioPage = () => {
                         className={`w-12 h-12 sm:w-16 sm:h-16 rounded-full ${colors.iconBg} border-2 ${colors.border} flex items-center justify-center relative`}
                       >
                         <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${colors.text}`} />
-                        {/* Step number badge */}
                         <span
                           className={`absolute -top-1.5 -right-1.5 w-6 h-6 rounded-full ${colors.dot} text-background text-xs font-bold flex items-center justify-center`}
                         >
                           {item.step}
                         </span>
                       </div>
-                      {/* Connector line segment */}
                       {i < timelineData.length - 1 && (
                         <div className={`w-px h-8 bg-gradient-to-b ${colors.line} opacity-30 mt-0`} />
                       )}
@@ -183,15 +191,6 @@ const BioPage = () => {
                   </div>
                 );
               })}
-            </div>
-          </div>
-          {/* Company logos */}
-          <div className="mt-16 pb-8">
-            <p className="text-center text-muted-foreground text-sm uppercase tracking-widest mb-8">Previous Experience</p>
-            <div className="flex items-center justify-center gap-12 sm:gap-16">
-              <img src={logo3m} alt="3M" className="h-12 sm:h-14 object-contain" />
-              <img src={logoAmgen} alt="Amgen" className="h-10 sm:h-12 object-contain" />
-              <img src={logoSanofi} alt="Sonoma Biotherapeutics" className="h-10 sm:h-12 object-contain" />
             </div>
           </div>
         </div>
