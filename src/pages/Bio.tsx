@@ -138,7 +138,7 @@ const BioPage = () => {
             <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8 sm:pl-[5.5rem]">Previous Experience</p>
             <div className="flex items-center justify-center gap-4 sm:gap-16 sm:pl-[5.5rem] flex-wrap">
               <div className="flex flex-col items-center gap-2">
-                <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logo3m} alt="3M" className="scale-[1.3] object-contain" />
                 </a>
                 <p className="text-muted-foreground text-xs text-center">Oct 2005 – Aug 2006</p>
