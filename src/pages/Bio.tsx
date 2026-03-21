@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
 import logo3m from "@/assets/logo-3m.png";
 import logoAmgen from "@/assets/logo-amgen.png";
-import logoSanofi from "@/assets/logo-sanofi.png";
+import logoSonoma from "@/assets/logo-sonoma.png";
 
 const timelineData = [
   {
