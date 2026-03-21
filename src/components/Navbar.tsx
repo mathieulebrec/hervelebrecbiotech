@@ -1,10 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import hexLogo from "@/assets/hex-logo.png";
 
+const CONTACT_EMAIL = "mathieulebrec@gmail.com";
+
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
 
   const links = [
     { label: "Home", to: "/" },
@@ -15,6 +18,15 @@ const Navbar = () => {
 
   const linkClass =
     "text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 active:scale-[0.97]";
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (window.location.pathname === "/") {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/#contact");
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/40">
@@ -43,18 +55,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/#contact"
-            onClick={(e) => {
-              if (window.location.pathname === "/") {
-                e.preventDefault();
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
+          <button
+            onClick={handleContactClick}
             className="inline-flex items-center justify-center text-sm font-medium bg-primary/10 text-primary border border-primary/20 rounded-full px-5 py-1.5 hover:bg-primary/15 transition-all duration-200 active:scale-[0.97]"
           >
             Contact
-          </Link>
+          </button>
         </div>
 
         {/* Mobile hamburger */}
@@ -83,23 +89,20 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/#contact"
+          <button
             onClick={(e) => {
               setMobileOpen(false);
-              if (window.location.pathname === "/") {
-                e.preventDefault();
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-              }
+              handleContactClick(e);
             }}
             className="text-center text-sm font-medium bg-primary/10 text-primary border border-primary/20 rounded-full px-5 py-2 hover:bg-primary/15 transition-all duration-200"
           >
             Contact
-          </Link>
+          </button>
         </div>
       )}
     </nav>
   );
 };
 
+export { CONTACT_EMAIL };
 export default Navbar;
