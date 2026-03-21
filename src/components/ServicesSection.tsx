@@ -99,7 +99,7 @@ const ServicesSection = () => {
                 </h3>
 
                 {/* Value statement */}
-                <p className="text-card-surface-foreground/80 text-sm font-medium mb-5">
+                <p className="text-card-surface-foreground/80 text-sm font-medium mb-3">
                   {s.value}
                 </p>
 
