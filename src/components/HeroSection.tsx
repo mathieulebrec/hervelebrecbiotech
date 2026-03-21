@@ -1,4 +1,4 @@
-import hervePortrait from "@/assets/herve-portrait.jpg";
+import hervePortrait from "@/assets/herve-portrait.png";
 
 const HeroSection = () => {
   const tags = ["Nonclinical Safety", "Program Strategy", "Study Design", "Regulatory Support"];
