@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import hervePortrait from "@/assets/herve-portrait.png";
+import hexLogo from "@/assets/hex-logo.png";
 
 const HeroSection = () => {
   const tags = ["Nonclinical Safety", "Program Strategy", "Study Design", "Regulatory Support"];
@@ -91,6 +92,12 @@ const HeroSection = () => {
 
             {/* Hex portrait */}
             <div className="relative w-56 h-56 sm:w-64 sm:h-64 mx-auto">
+              {/* Transparent logo behind photo */}
+              <img
+                src={hexLogo}
+                alt=""
+                className="absolute inset-0 w-full h-full object-contain opacity-10 scale-[1.8] pointer-events-none"
+              />
               {/* Glow behind */}
               <div className="absolute inset-[-12px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))] opacity-40 blur-md" />
               {/* Gradient border */}
