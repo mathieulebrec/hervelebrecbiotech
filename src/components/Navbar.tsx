@@ -29,7 +29,7 @@ const Navbar = () => {
               key={link.label}
               to={link.to}
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="text-sm border border-foreground/40 rounded-full px-5 py-1.5 text-foreground hover:bg-foreground/10 transition-all duration-200 active:scale-[0.97]"
             >
               {link.label}
             </Link>
