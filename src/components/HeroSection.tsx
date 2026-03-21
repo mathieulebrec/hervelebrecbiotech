@@ -111,7 +111,7 @@ const HeroSection = () => {
               <h2 className="text-foreground font-bold text-xl sm:text-2xl">
                 Hervé Lebrec, PharmD, PhD, DABT
               </h2>
-              <p className="text-muted-foreground text-sm mt-1">
+              <p className="text-emerald-400 text-sm mt-1">
                 Former Amgen and Sonoma Biotherapeutics leader
               </p>
             </div>
