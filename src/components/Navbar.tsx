@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <Link to="/" className="flex items-center gap-3">
-          <img src={hexLogo} alt="HL Toxicology logo" className="w-12 h-12" />
+          <img src={hexLogo} alt="HL Toxicology logo" className="w-[62px] h-[62px]" />
           <div className="leading-tight">
             <div className="text-foreground font-bold tracking-wider text-sm uppercase">
               HL Toxicology
