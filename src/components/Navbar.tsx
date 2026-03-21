@@ -69,7 +69,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md px-6 py-4 flex flex-col gap-3">
+        <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-md px-6 py-4 flex flex-col gap-3">
           {links.map((link) => (
             <Link
               key={link.label}
