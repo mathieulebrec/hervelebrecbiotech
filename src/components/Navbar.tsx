@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", to: "/" },
-    { label: "Bio", to: "/bio" },
+    { label: "Founder Bio", to: "/bio" },
     { label: "Publications", to: "/publications" },
     { label: "Beyond the Lab", to: "/beyond-the-lab" },
   ];
