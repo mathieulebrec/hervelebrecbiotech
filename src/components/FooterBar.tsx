@@ -16,12 +16,6 @@ const FooterBar = () => {
             <span className="text-foreground/70 font-medium">Modalities: </span>
             {modalities.join(" • ")}
           </p>
-          <div className="flex items-center gap-2 shrink-0">
-            <span className="w-2.5 h-2.5 rounded-full bg-cyan inline-block" />
-            <span className="text-foreground text-sm font-semibold">
-              60 peer-reviewed publications
-            </span>
-          </div>
         </div>
       </div>
     </footer>
