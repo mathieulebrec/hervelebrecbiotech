@@ -27,7 +27,7 @@ const BeyondTheLab = () => {
               className="text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up"
               style={{ animationDelay: "250ms" }}
             >
-              The personal journey behind the science — and the meaning woven into every detail of our identity.
+              Inspired by the ocean, we navigate complexity in biotechnology—charting clear, confident paths that bring innovative therapies to life.
             </p>
           </div>
 
