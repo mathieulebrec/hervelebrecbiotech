@@ -69,7 +69,7 @@ const HeroSection = () => {
                 to="/bio"
                 className="inline-flex items-center gap-2 bg-secondary text-foreground font-medium text-sm rounded-full px-7 py-2.5 hover:bg-secondary/80 transition-all duration-200 active:scale-[0.97]"
               >
-                Meet Hervé
+                🤝 Meet Hervé
               </Link>
             </div>
           </div>
