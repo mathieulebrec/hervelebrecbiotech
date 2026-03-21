@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-5 gap-12 items-center min-h-[calc(100vh-12rem)]">
           {/* Left content — 3 cols */}
-          <div className="lg:col-span-3 space-y-8">
+          <div className="lg:col-span-3 space-y-8 mt-4 sm:mt-0">
             <p
               className="text-cyan text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
               style={{ animationDelay: "100ms" }}
