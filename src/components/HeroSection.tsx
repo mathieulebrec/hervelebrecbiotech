@@ -5,10 +5,10 @@ import hervePortrait from "@/assets/herve-portrait.png";
 const HeroSection = () => {
   return (
     <section className="relative bg-hero-gradient min-h-[85vh] pt-28 sm:pt-32 pb-12 overflow-hidden">
-      {/* Subtle hex grid background */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L52 17.5 L52 42.5 L30 55 L8 42.5 L8 17.5Z' fill='none' stroke='%2322d3ee' stroke-width='0.5'/%3E%3C/svg%3E")`,
-        backgroundSize: '60px 60px',
+      {/* Minimal hex texture — very low opacity */}
+      <div className="absolute inset-0 opacity-[0.015]" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 8 L68 24 L68 56 L40 72 L12 56 L12 24Z' fill='none' stroke='%23a0c4c8' stroke-width='0.4'/%3E%3C/svg%3E")`,
+        backgroundSize: '80px 80px',
       }} />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -16,7 +16,7 @@ const HeroSection = () => {
           {/* Left content — 7 cols */}
           <div className="lg:col-span-7 space-y-6">
             <p
-              className="text-[hsl(var(--cyan))] text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
+              className="text-primary text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
               style={{ animationDelay: "100ms" }}
             >
               Nonclinical Safety Consulting
@@ -24,7 +24,7 @@ const HeroSection = () => {
 
             <h1
               className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.1] text-foreground opacity-0 animate-fade-up"
-              style={{ animationDelay: "200ms", textWrap: "balance" }}
+              style={{ animationDelay: "200ms", textWrap: "balance" } as React.CSSProperties}
             >
               Guiding pharma &amp; biotech through nonclinical development—from first-in-human to approval
             </h1>
@@ -35,15 +35,15 @@ const HeroSection = () => {
               style={{ animationDelay: "300ms" }}
             >
               <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--cyan))]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                 Former Amgen &amp; Sonoma leader
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--cyan))]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                 PharmD · PhD · DABT
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--cyan))]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                 60+ peer-reviewed publications
               </span>
             </div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
             >
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-[hsl(var(--cyan))] text-[hsl(var(--navy-deep))] font-semibold text-sm rounded-full px-7 py-2.5 hover:brightness-110 transition-all duration-200 active:scale-[0.97] shadow-[0_0_20px_hsl(var(--cyan)/0.25)]"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-semibold text-sm rounded-full px-7 py-2.5 hover:brightness-110 transition-all duration-200 active:scale-[0.97] shadow-md shadow-primary/15"
               >
                 Schedule a Consultation
                 <ArrowRight className="w-4 h-4" />
@@ -78,15 +78,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right — portrait, tighter */}
+          {/* Right — portrait */}
           <div
             className="lg:col-span-5 flex flex-col items-center justify-center gap-4 opacity-0 animate-fade-up"
             style={{ animationDelay: "350ms" }}
           >
             {/* Hex portrait */}
             <div className="relative w-52 h-52 sm:w-60 sm:h-60 mx-auto">
-              <div className="absolute inset-[-10px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))] opacity-35 blur-md" />
-              <div className="absolute inset-[-5px] hex-clip bg-gradient-to-br from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))]" />
+              <div className="absolute inset-[-8px] hex-clip bg-gradient-to-br from-primary/50 to-accent/30 opacity-25 blur-sm" />
+              <div className="absolute inset-[-4px] hex-clip bg-gradient-to-br from-primary/70 to-accent/40" />
               <div className="absolute inset-0 hex-clip bg-background" />
               <img
                 src={hervePortrait}
@@ -103,7 +103,7 @@ const HeroSection = () => {
               <p className="text-muted-foreground text-sm mt-0.5">
                 PharmD, PhD, DABT
               </p>
-              <p className="text-emerald-400 text-xs mt-1.5 font-medium">
+              <p className="text-primary/80 text-xs mt-1.5 font-medium">
                 15+ years industry leadership at Amgen &amp; Sonoma Bio
               </p>
             </div>

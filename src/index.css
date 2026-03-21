@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 210 50% 8%;
-    --foreground: 0 0% 98%;
+    --background: 215 32% 7%;
+    --foreground: 210 20% 95%;
 
-    --card: 210 40% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 215 28% 11%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 210 40% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 215 28% 11%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 174 72% 49%;
-    --primary-foreground: 210 50% 8%;
+    --primary: 178 42% 46%;
+    --primary-foreground: 215 32% 7%;
 
-    --secondary: 210 40% 16%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 210 30% 18%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 215 20% 17%;
+    --muted-foreground: 210 12% 55%;
 
-    --accent: 270 60% 55%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 262 30% 48%;
+    --accent-foreground: 210 20% 95%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 30% 22%;
-    --input: 210 30% 22%;
-    --ring: 174 72% 49%;
+    --border: 215 20% 18%;
+    --input: 215 20% 18%;
+    --ring: 178 42% 46%;
 
     --radius: 0.5rem;
 
-    /* Custom tokens */
-    --cyan: 174 72% 49%;
-    --cyan-glow: 174 100% 50%;
-    --navy-deep: 220 60% 6%;
-    --navy-mid: 210 50% 10%;
-    --purple-accent: 270 60% 55%;
-    --card-surface: 0 0% 97%;
-    --card-surface-foreground: 220 30% 15%;
+    /* Brand tokens — premium scientific */
+    --teal: 178 42% 46%;
+    --teal-muted: 178 30% 38%;
+    --navy-deep: 215 40% 5%;
+    --navy-mid: 215 32% 9%;
+    --purple-accent: 262 30% 48%;
+    --card-surface: 210 15% 96%;
+    --card-surface-foreground: 215 25% 15%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -68,23 +68,28 @@
 }
 
 @layer utilities {
+  .text-gradient-teal {
+    @apply bg-gradient-to-r from-[hsl(var(--teal))] to-[hsl(var(--purple-accent))] bg-clip-text text-transparent;
+  }
+
+  /* Legacy alias */
   .text-gradient-cyan {
-    @apply bg-gradient-to-r from-[hsl(var(--cyan))] to-[hsl(var(--purple-accent))] bg-clip-text text-transparent;
+    @apply text-gradient-teal;
   }
 
   .bg-hero-gradient {
     background: linear-gradient(
-      160deg,
+      168deg,
       hsl(var(--navy-deep)) 0%,
-      hsl(var(--navy-mid)) 40%,
-      hsl(220, 40%, 12%) 60%,
-      hsl(var(--purple-accent) / 0.3) 100%
+      hsl(var(--navy-mid)) 50%,
+      hsl(215, 28%, 11%) 75%,
+      hsl(var(--purple-accent) / 0.12) 100%
     );
   }
 
-  .border-glow-cyan {
-    border-color: hsl(var(--cyan) / 0.4);
-    box-shadow: 0 0 12px hsl(var(--cyan) / 0.15);
+  .border-glow-teal {
+    border-color: hsl(var(--teal) / 0.3);
+    box-shadow: 0 0 8px hsl(var(--teal) / 0.08);
   }
 
   .hex-clip {
@@ -92,9 +97,9 @@
   }
 
   .glow-ring {
-    box-shadow: 
-      0 0 20px hsl(var(--cyan) / 0.3),
-      0 0 40px hsl(var(--purple-accent) / 0.2);
+    box-shadow:
+      0 0 12px hsl(var(--teal) / 0.15),
+      0 0 24px hsl(var(--purple-accent) / 0.08);
   }
 
   .card-service {

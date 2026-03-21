@@ -48,7 +48,7 @@ const BeyondTheLab = () => {
             className="max-w-2xl mx-auto opacity-0 animate-fade-up"
             style={{ animationDelay: "400ms" }}
           >
-            <div className="bg-card/60 border border-border/40 rounded-2xl p-10 sm:p-14 flex flex-col items-center gap-10">
+            <div className="bg-card border border-border/50 rounded-2xl p-10 sm:p-14 flex flex-col items-center gap-10">
               <img
                 src={hexLogo}
                 alt="HL Toxicology logo — sailboat with DNA helix mast inside a hexagon"
@@ -57,7 +57,7 @@ const BeyondTheLab = () => {
 
               <div className="text-center space-y-4 max-w-lg">
                 <h2 className="text-foreground font-bold text-2xl">Story Behind the Logo</h2>
-                <p className="text-cyan leading-relaxed">
+                <p className="text-primary/90 leading-relaxed">
                   Hervé's work is rooted in scientific rigor, but his perspective is shaped just as much by his time on the water. Sailing demands precision, adaptability, and respect for complex systems—qualities that closely mirror his approach to science. This balance between disciplined research and the freedom of the open sea inspired the logo, which reflects both his commitment to advancing biotechnology and his passion for navigating beyond it.
                 </p>
               </div>
