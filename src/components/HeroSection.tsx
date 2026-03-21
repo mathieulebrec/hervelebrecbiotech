@@ -32,7 +32,7 @@ const HeroSection = () => {
             </h1>
 
             <p
-              className="text-muted-foreground text-lg leading-relaxed max-w-2xl opacity-0 animate-fade-up"
+              className="text-foreground font-semibold text-lg leading-relaxed max-w-2xl opacity-0 animate-fade-up"
               style={{ animationDelay: "350ms" }}
             >
               HL Toxicology & Preclinical Services provides tailored consulting in nonclinical
