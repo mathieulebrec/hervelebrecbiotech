@@ -62,13 +62,13 @@ const HeroSection = () => {
             >
               <a
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-sm rounded-full px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-xs sm:text-sm rounded-full px-4 sm:px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
               >
                 Explore Services
               </a>
               <Link
                 to="/bio"
-                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-sm rounded-full px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center justify-center gap-2 border-2 border-cyan text-cyan font-semibold text-xs sm:text-sm rounded-full px-4 sm:px-7 py-2.5 hover:bg-cyan/10 transition-all duration-200 active:scale-[0.97]"
               >
                 <span className="text-[1.3em]">🤝</span> Meet Hervé
               </Link>
