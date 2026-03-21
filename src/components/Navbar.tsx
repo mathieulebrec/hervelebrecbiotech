@@ -33,7 +33,13 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            to="#contact"
+            to="/#contact"
+            onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="text-sm border border-foreground/40 rounded-full px-5 py-1.5 text-foreground hover:bg-foreground/10 transition-all duration-200 active:scale-[0.97]"
           >
             Contact
