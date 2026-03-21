@@ -6,7 +6,7 @@ const HeroSection = () => {
   const tags = ["Nonclinical Safety", "Program Strategy", "Study Design", "Regulatory Support"];
 
   return (
-    <section className="relative bg-hero-gradient min-h-screen pt-24 pb-16 overflow-hidden">
+    <section className="relative bg-hero-gradient min-h-screen pt-32 sm:pt-36 pb-16 overflow-hidden">
       {/* Subtle hex grid background */}
       <div className="absolute inset-0 opacity-[0.04]" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L52 17.5 L52 42.5 L30 55 L8 42.5 L8 17.5Z' fill='none' stroke='%2322d3ee' stroke-width='0.5'/%3E%3C/svg%3E")`,
