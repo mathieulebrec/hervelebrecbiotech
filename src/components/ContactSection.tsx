@@ -63,7 +63,7 @@ const ContactSection = () => {
               Contact Us
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              To contact us, fill your information, or contact us at:
+              Want to connect? Fill out your information or contact us at:
             </p>
 
             <div className="space-y-3 text-foreground/90 text-sm">
