@@ -110,8 +110,9 @@ const BioPage = () => {
   const bottomItems = timelineData.filter((d) => d.position === "bottom");
 
   return (
-    <div className="min-h-screen bg-hero-gradient pt-24 pb-20">
-      <div className="container mx-auto px-6">
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <div className="bg-hero-gradient pt-24 pb-20">
         {/* Header */}
         <div className="max-w-3xl mb-16 space-y-5">
           <p
