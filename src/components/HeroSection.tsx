@@ -76,7 +76,7 @@ const HeroSection = () => {
 
           {/* Right — portrait with hex frame */}
           <div
-            className="lg:col-span-2 flex flex-col items-center gap-6 opacity-0 animate-fade-up"
+            className="lg:col-span-2 flex flex-col items-center justify-center gap-6 opacity-0 animate-fade-up"
             style={{ animationDelay: "400ms" }}
           >
             {/* Credential badges */}
