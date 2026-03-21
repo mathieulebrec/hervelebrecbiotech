@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { GraduationCap, FlaskConical, ShieldCheck, TrendingUp, Users, Atom } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
+import logo3m from "@/assets/logo-3m.png";
+import logoAmgen from "@/assets/logo-amgen.png";
+import logoSanofi from "@/assets/logo-sanofi.png";
 
 const timelineData = [
   {
@@ -180,6 +183,15 @@ const BioPage = () => {
                   </div>
                 );
               })}
+            </div>
+          </div>
+          {/* Company logos */}
+          <div className="mt-16 pb-8">
+            <p className="text-center text-muted-foreground text-sm uppercase tracking-widest mb-8">Previous Experience</p>
+            <div className="flex items-center justify-center gap-12 sm:gap-16">
+              <img src={logo3m} alt="3M" className="h-12 sm:h-14 object-contain" />
+              <img src={logoAmgen} alt="Amgen" className="h-10 sm:h-12 object-contain" />
+              <img src={logoSanofi} alt="Sanofi" className="h-10 sm:h-12 object-contain" />
             </div>
           </div>
         </div>
