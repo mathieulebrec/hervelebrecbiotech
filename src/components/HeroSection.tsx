@@ -66,7 +66,7 @@ const HeroSection = () => {
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-semibold text-sm rounded-full px-7 py-2.5 hover:brightness-110 transition-all duration-200 active:scale-[0.97] shadow-md shadow-primary/15"
               >
-                Schedule a Consultation
+                Connect With Us
                 <ArrowRight className="w-4 h-4" />
               </a>
               <Link
