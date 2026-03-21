@@ -137,14 +137,23 @@ const BioPage = () => {
           <div className="mb-8 pb-4 opacity-0 animate-fade-up max-w-3xl mx-auto" style={{ animationDelay: "380ms" }}>
             <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8 pl-[4.5rem] sm:pl-[5.5rem]">Previous Experience</p>
             <div className="flex items-center justify-center gap-12 sm:gap-16 pl-[4.5rem] sm:pl-[5.5rem]">
-              <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden">
-                <img src={logo3m} alt="3M" className="scale-[1.3] object-contain" />
+              <div className="flex flex-col items-center gap-2">
+                <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden">
+                  <img src={logo3m} alt="3M" className="scale-[1.3] object-contain" />
+                </div>
+                <p className="text-muted-foreground text-xs text-center">Oct 2005 – Aug 2006</p>
               </div>
-              <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24">
-                <img src={logoAmgen} alt="Amgen" className="max-h-full max-w-full object-contain" />
+              <div className="flex flex-col items-center gap-2">
+                <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24">
+                  <img src={logoAmgen} alt="Amgen" className="max-h-full max-w-full object-contain" />
+                </div>
+                <p className="text-muted-foreground text-xs text-center">Sep 2006 – Oct 2021</p>
               </div>
-              <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden">
-                <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="scale-[1.3] object-contain" />
+              <div className="flex flex-col items-center gap-2">
+                <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden">
+                  <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="scale-[1.3] object-contain" />
+                </div>
+                <p className="text-muted-foreground text-xs text-center">Oct 2021 – Feb 2026</p>
               </div>
             </div>
           </div>
