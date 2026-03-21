@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
-import hexLogo from "@/assets/hex-logo-hires.png";
+import hexLogo from "@/assets/hex-logo-original.png";
 
 const BeyondTheLab = () => {
   return (
