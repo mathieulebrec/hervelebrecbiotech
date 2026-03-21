@@ -150,9 +150,9 @@ const BioPage = () => {
                 <p className="text-muted-foreground text-xs text-center">Sep 2006 – Oct 2021</p>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden">
+                <a href="https://sonomabio.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="scale-[1.3] object-contain" />
-                </div>
+                </a>
                 <p className="text-muted-foreground text-xs text-center">Oct 2021 – Feb 2026</p>
               </div>
             </div>
