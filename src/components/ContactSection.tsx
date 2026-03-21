@@ -45,7 +45,7 @@ const ContactSection = () => {
     const body = encodeURIComponent(
       `Name: ${result.data.firstName} ${result.data.lastName}\nEmail: ${result.data.email}\n\n${result.data.message}`
     );
-    window.open(`mailto:lebrecherve@gmail.com?subject=${subject}&body=${body}`, "_blank");
+    window.open(`mailto:mathieulebrec@gmail.com?subject=${subject}&body=${body}`, "_blank");
     setSending(false);
     toast.success("Opening your email client…");
   };
