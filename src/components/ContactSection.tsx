@@ -82,7 +82,7 @@ const ContactSection = () => {
               <p>
                 <span className="font-semibold">LinkedIn:</span>{" "}
                 <a
-                  href="https://www.linkedin.com/in/hervelebrec/"
+                  href="https://www.linkedin.com/in/herv%C3%A9-lebrec-pharmd-phd-dabt-a832565/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan hover:underline"
