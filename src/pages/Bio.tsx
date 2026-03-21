@@ -143,8 +143,8 @@ const BioPage = () => {
               <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24">
                 <img src={logoAmgen} alt="Amgen" className="max-h-full max-w-full object-contain" />
               </div>
-              <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24">
-                <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="max-h-full max-w-full object-contain" />
+              <div className="bg-white rounded-xl p-4 flex items-center justify-center w-28 h-20 sm:w-36 sm:h-24 overflow-hidden">
+                <img src={logoSonoma} alt="Sonoma Biotherapeutics" className="scale-[1.3] object-contain" />
               </div>
             </div>
           </div>
