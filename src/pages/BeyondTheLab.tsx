@@ -21,7 +21,7 @@ const BeyondTheLab = () => {
               className="text-4xl sm:text-5xl font-bold text-foreground leading-[1.1] opacity-0 animate-fade-up"
               style={{ animationDelay: "180ms" }}
             >
-              Beyond the Lab
+              Beyond the Lab — Meet the Founder
             </h1>
             <p
               className="text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up"
