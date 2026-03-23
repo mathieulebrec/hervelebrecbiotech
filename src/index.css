@@ -102,6 +102,29 @@
       0 0 24px hsl(var(--purple-accent) / 0.08);
   }
 
+  @keyframes blink-smile {
+    0%, 90%, 100% {
+      transform: scaleY(1) scaleX(1);
+      filter: brightness(1);
+    }
+    93% {
+      transform: scaleY(0.97) scaleX(1.005);
+      filter: brightness(1.04);
+    }
+    95% {
+      transform: scaleY(0.92) scaleX(1.01);
+      filter: brightness(1.08);
+    }
+    97% {
+      transform: scaleY(0.97) scaleX(1.005);
+      filter: brightness(1.04);
+    }
+  }
+
+  .animate-blink-smile {
+    animation: blink-smile 6s ease-in-out infinite;
+  }
+
   .card-service {
     background: hsl(var(--card-surface));
     color: hsl(var(--card-surface-foreground));
