@@ -110,8 +110,8 @@ const BioPage = () => {
               Hervé Lebrec, PharmD, PhD,&nbsp;DABT
             </h1>
             <p
-              className="text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up"
-              style={{ animationDelay: "250ms" }}
+              className="text-muted-foreground text-lg leading-relaxed animate-fade-up"
+              style={{ animationDelay: "250ms", opacity: 0 }}
             >
               Scientific leadership across academia, pharma, biotech, and consulting—guiding
               therapeutic candidates with science-based development strategy.
@@ -119,8 +119,8 @@ const BioPage = () => {
 
             {/* Expertise tags */}
             <div
-              className="flex flex-wrap gap-3 pt-2 opacity-0 animate-fade-up"
-              style={{ animationDelay: "320ms" }}
+              className="flex flex-wrap gap-3 pt-2 animate-fade-up"
+              style={{ animationDelay: "320ms", opacity: 0 }}
             >
               {expertiseTags.map((tag) => (
                 <span
