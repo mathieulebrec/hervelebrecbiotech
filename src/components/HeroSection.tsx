@@ -104,7 +104,7 @@ const HeroSection = () => {
                 PharmD, PhD, DABT
               </p>
               <p className="text-primary/80 text-xs mt-1.5 font-medium">
-                25+ years industry leadership at Amgen &amp; Sonoma Bio
+                15+ years industry leadership at Amgen &amp; Sonoma Bio
               </p>
             </div>
 
