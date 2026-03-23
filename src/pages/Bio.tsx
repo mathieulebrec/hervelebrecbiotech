@@ -98,14 +98,14 @@ const BioPage = () => {
           {/* Header */}
           <div className="max-w-3xl mb-16 space-y-5">
             <p
-              className="text-cyan text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
-              style={{ animationDelay: "100ms" }}
+              className="text-cyan text-xs font-semibold tracking-[0.25em] uppercase animate-fade-up"
+              style={{ animationDelay: "100ms", opacity: 0 }}
             >
               Professional Timeline
             </p>
             <h1
-             className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1] opacity-0 animate-fade-up sm:whitespace-nowrap"
-              style={{ animationDelay: "180ms" }}
+             className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1] animate-fade-up sm:whitespace-nowrap"
+              style={{ animationDelay: "180ms", opacity: 0 }}
             >
               Hervé Lebrec, PharmD, PhD,&nbsp;DABT
             </h1>
