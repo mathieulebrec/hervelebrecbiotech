@@ -91,7 +91,7 @@ const HeroSection = () => {
               <img
                 src={hervePortrait}
                 alt="Hervé Lebrec, PharmD, PhD, DABT"
-                className="absolute inset-[3px] hex-clip object-cover object-center w-[calc(100%-6px)] h-[calc(100%-6px)] animate-blink-smile"
+                className="absolute inset-[3px] hex-clip object-cover object-center w-[calc(100%-6px)] h-[calc(100%-6px)]"
               />
             </div>
 
