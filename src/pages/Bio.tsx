@@ -170,8 +170,8 @@ const BioPage = () => {
                 return (
                   <div
                     key={item.title}
-                    className="relative flex gap-5 sm:gap-7 items-start opacity-0 animate-fade-up"
-                    style={{ animationDelay: `${500 + i * 120}ms` }}
+                    className="relative flex gap-5 sm:gap-7 items-start animate-fade-up"
+                    style={{ animationDelay: `${500 + i * 120}ms`, opacity: 0 }}
                   >
                     {/* Step number + icon column */}
                     <div className="flex flex-col items-center shrink-0 z-10">
