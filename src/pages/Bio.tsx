@@ -98,20 +98,20 @@ const BioPage = () => {
           {/* Header */}
           <div className="max-w-3xl mb-16 space-y-5">
             <p
-              className="text-cyan text-xs font-semibold tracking-[0.25em] uppercase opacity-0 animate-fade-up"
-              style={{ animationDelay: "100ms" }}
+              className="text-cyan text-xs font-semibold tracking-[0.25em] uppercase animate-fade-up"
+              style={{ animationDelay: "100ms", opacity: 0 }}
             >
               Professional Timeline
             </p>
             <h1
-             className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1] opacity-0 animate-fade-up sm:whitespace-nowrap"
-              style={{ animationDelay: "180ms" }}
+             className="text-2xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[1.1] animate-fade-up sm:whitespace-nowrap"
+              style={{ animationDelay: "180ms", opacity: 0 }}
             >
               Hervé Lebrec, PharmD, PhD,&nbsp;DABT
             </h1>
             <p
-              className="text-muted-foreground text-lg leading-relaxed opacity-0 animate-fade-up"
-              style={{ animationDelay: "250ms" }}
+              className="text-muted-foreground text-lg leading-relaxed animate-fade-up"
+              style={{ animationDelay: "250ms", opacity: 0 }}
             >
               Scientific leadership across academia, pharma, biotech, and consulting—guiding
               therapeutic candidates with science-based development strategy.
@@ -119,8 +119,8 @@ const BioPage = () => {
 
             {/* Expertise tags */}
             <div
-              className="flex flex-wrap gap-3 pt-2 opacity-0 animate-fade-up"
-              style={{ animationDelay: "320ms" }}
+              className="flex flex-wrap gap-3 pt-2 animate-fade-up"
+              style={{ animationDelay: "320ms", opacity: 0 }}
             >
               {expertiseTags.map((tag) => (
                 <span
@@ -134,7 +134,7 @@ const BioPage = () => {
           </div>
 
           {/* Company logos */}
-          <div className="mb-8 pb-4 opacity-0 animate-fade-up max-w-3xl mx-auto" style={{ animationDelay: "380ms" }}>
+          <div className="mb-8 pb-4 animate-fade-up max-w-3xl mx-auto" style={{ animationDelay: "380ms", opacity: 0 }}>
             <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8 sm:pl-[5.5rem]">Previous Experience</p>
             <div className="flex items-center justify-center gap-4 sm:gap-16 sm:pl-[5.5rem] flex-wrap">
               <div className="flex flex-col items-center gap-2">
@@ -170,8 +170,8 @@ const BioPage = () => {
                 return (
                   <div
                     key={item.title}
-                    className="relative flex gap-5 sm:gap-7 items-start opacity-0 animate-fade-up"
-                    style={{ animationDelay: `${500 + i * 120}ms` }}
+                    className="relative flex gap-5 sm:gap-7 items-start animate-fade-up"
+                    style={{ animationDelay: `${500 + i * 120}ms`, opacity: 0 }}
                   >
                     {/* Step number + icon column */}
                     <div className="flex flex-col items-center shrink-0 z-10">
