@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { GraduationCap, FlaskConical, ShieldCheck, TrendingUp, Users, Atom } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
+import logoParisSud from "@/assets/logo-paris-sud.png";
 import logo3m from "@/assets/logo-3m.png";
 import logoAmgen from "@/assets/logo-amgen.png";
 import logoSonoma from "@/assets/logo-sonoma.png";
