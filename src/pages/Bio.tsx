@@ -143,13 +143,13 @@ const BioPage = () => {
                 <a href="https://www.universite-paris-saclay.fr/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logoParisSud} alt="Université Paris-Sud" className="max-h-full max-w-full object-contain" />
                 </a>
-                <p className="text-muted-foreground text-xs text-center">Sep 1996 – Sep 2005</p>
+                <p className="text-muted-foreground text-xs text-center">Sept 1993 – Dec 1999</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logo3m} alt="3M" className="scale-[1.3] object-contain" />
                 </a>
-                <p className="text-muted-foreground text-xs text-center">Oct 2005 – Aug 2006</p>
+                <p className="text-muted-foreground text-xs text-center">April 2000 – Aug 2006</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <a href="https://www.amgen.com/science?_gl=1*g2ja7s*_up*MQ..*_ga*MTU2NjExNzYuMTc3NDEyMTQ5Mg..*_ga_CBMSV0J9VL*czE3NzQxMjE0OTIkbzEkZzEkdDE3NzQxMjE1MzIkajIwJGwwJGgw" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 hover:shadow-lg transition-shadow duration-200">
