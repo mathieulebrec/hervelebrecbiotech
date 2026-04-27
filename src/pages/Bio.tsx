@@ -80,6 +80,7 @@ const colorMap = {
 
 const expertiseTags = [
   "Nonclinical Safety",
+  "Immunotoxicology",
   "PK & Clinical Pharmacology",
   "Immunogenicity",
   "Translational Strategy",
