@@ -1,10 +1,12 @@
 const modalities = [
   "small molecules",
   "antibodies",
+  "biosimilars",
   "bispecific T-cell engagers",
   "oncolytic viruses",
   "siRNAs",
-  "engineered T cells",
+  "cell therapies",
+  "gene therapies",
 ];
 
 const FooterBar = () => {
