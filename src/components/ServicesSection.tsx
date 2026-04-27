@@ -68,7 +68,7 @@ const ServicesSection = () => {
             style={{ animationDelay: "260ms" }}
           >
             Every engagement is tailored to your program's stage and therapeutic modality.
-            Whether you need a full nonclinical strategy or targeted regulatory support,
+            Whether you need a full nonclinical strategy or targeted scientific and regulatory support,
             HL Toxicology integrates seamlessly with your team.
           </p>
         </div>
