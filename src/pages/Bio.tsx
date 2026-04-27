@@ -143,7 +143,7 @@ const BioPage = () => {
                 <a href="https://www.universite-paris-saclay.fr/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logoParisSud} alt="Université Paris-Sud" className="max-h-full max-w-full object-contain" />
                 </a>
-                <p className="text-muted-foreground text-xs text-center">Sep 1996 – Sep 2005</p>
+                <p className="text-muted-foreground text-xs text-center">Sept 1993 – Dec 1999</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
