@@ -36,7 +36,7 @@ const HeroSection = () => {
             >
               <span className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
-                Former Amgen &amp; Sonoma leader
+                Former 3M, Amgen and Sonoma Leader
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
