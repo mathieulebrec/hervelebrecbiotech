@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { GraduationCap, FlaskConical, ShieldCheck, TrendingUp, Users, Atom } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FooterBar from "@/components/FooterBar";
+import logoParisSud from "@/assets/logo-paris-sud.png";
 import logo3m from "@/assets/logo-3m.png";
 import logoAmgen from "@/assets/logo-amgen.png";
 import logoSonoma from "@/assets/logo-sonoma.png";
@@ -135,9 +136,15 @@ const BioPage = () => {
           </div>
 
           {/* Company logos */}
-          <div className="mb-8 pb-4 animate-fade-up max-w-3xl mx-auto" style={{ animationDelay: "380ms", opacity: 0 }}>
-            <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8 sm:pl-[5.5rem]">Previous Experience</p>
-            <div className="flex items-center justify-center gap-4 sm:gap-16 sm:pl-[5.5rem] flex-wrap">
+          <div className="mb-8 pb-4 animate-fade-up max-w-4xl mx-auto" style={{ animationDelay: "380ms", opacity: 0 }}>
+            <p className="text-center text-muted-foreground text-sm font-bold uppercase tracking-widest mb-8">Previous Experience</p>
+            <div className="flex items-center justify-center gap-4 sm:gap-12 flex-wrap">
+              <div className="flex flex-col items-center gap-2">
+                <a href="https://www.universite-paris-saclay.fr/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
+                  <img src={logoParisSud} alt="Université Paris-Sud" className="max-h-full max-w-full object-contain" />
+                </a>
+                <p className="text-muted-foreground text-xs text-center">Sep 1996 – Sep 2005</p>
+              </div>
               <div className="flex flex-col items-center gap-2">
                 <a href="https://www.3m.com/" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center w-24 h-16 sm:w-36 sm:h-24 overflow-hidden hover:shadow-lg transition-shadow duration-200">
                   <img src={logo3m} alt="3M" className="scale-[1.3] object-contain" />
