@@ -26,7 +26,7 @@ const HeroSection = () => {
               className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.1] text-foreground opacity-0 animate-fade-up"
               style={{ animationDelay: "200ms", textWrap: "balance" } as React.CSSProperties}
             >
-              Navigating pharma &amp; biotech through nonclinical development—from first-in-human to approval
+              Navigating pharma &amp; biotech through nonclinical development—from discovery to first-in-human and to approval
             </h1>
 
             {/* Trust signals */}
