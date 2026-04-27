@@ -104,7 +104,7 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Deliverables */}
-                <ul className="space-y-1.5 mb-4 flex-1">
+                <ul className="space-y-1.5 flex-1 flex flex-col justify-center">
                   {s.deliverables.map((d) => (
                     <li key={d} className="flex items-start gap-2 text-sm text-card-surface-foreground/60 leading-relaxed">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/50 shrink-0" />
@@ -112,14 +112,6 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-
-                {/* Scenario */}
-                <div className="border-t border-border/60 pt-4">
-                  <p className="text-xs text-card-surface-foreground/45 leading-relaxed">
-                    <span className="font-semibold text-card-surface-foreground/60">Example:</span>{" "}
-                    {s.scenario}
-                  </p>
-                </div>
               </article>
             );
           })}
