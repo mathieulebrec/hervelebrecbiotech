@@ -39,7 +39,7 @@ const timelineData = [
   {
     step: 5,
     title: "Sonoma Biotherapeutics",
-    description: "Vice President, Development Sciences for engineered Treg programs; oversaw safety, PK, and immunogenicity.",
+    description: "Vice President, Development Sciences for engineered Treg and Fc-Fusion protein programs; oversaw safety, PK, and immunogenicity. Herve also provided program leadership.",
     icon: Atom,
     color: "green" as const,
   },
