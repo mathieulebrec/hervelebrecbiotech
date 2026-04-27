@@ -39,7 +39,7 @@ const BeyondTheLab = () => {
             <img
               src={herveSailing}
               alt="Hervé sailing on the open water"
-              className="w-full rounded-2xl object-cover max-h-[400px]"
+              className="w-full rounded-2xl object-contain max-h-[600px] bg-card"
             />
           </div>
 
