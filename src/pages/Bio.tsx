@@ -120,13 +120,13 @@ const BioPage = () => {
 
             {/* Expertise tags */}
             <div
-              className="flex flex-wrap gap-3 pt-2 animate-fade-up"
+              className="flex flex-wrap sm:flex-nowrap gap-2 sm:gap-2.5 pt-2 animate-fade-up"
               style={{ animationDelay: "320ms", opacity: 0 }}
             >
               {expertiseTags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-sm border border-foreground/25 rounded-full px-4 py-1.5 text-foreground/80"
+                  className="text-xs sm:text-sm border border-foreground/25 rounded-full px-3 sm:px-3.5 py-1.5 text-foreground/80 whitespace-nowrap"
                 >
                   {tag}
                 </span>
