@@ -58,7 +58,7 @@ const BeyondTheLab = () => {
               <div className="text-center space-y-4 max-w-lg">
                 <h2 className="text-foreground font-bold text-2xl">Story Behind the Logo</h2>
                 <p className="text-primary/90 leading-relaxed">
-                  Hervé's work is rooted in scientific rigor, but his perspective is shaped just as much by his time on the water and navigation. Sailing demands precision, adaptability, and respect for complex systems—qualities that closely mirror his approach to science. This balance between disciplined research and the freedom of the open sea inspired the logo, which reflects both his commitment to advancing biotechnology and his passion for navigating beyond it.
+                  Hervé's work is rooted in a deep interest for drug development, and he loves spending his free time on the water. Sailing demands precision, adaptability, and respect for complex systems; qualities that closely mirror his approach to science. This balance between disciplined research and the freedom of the open sea inspired the logo, which reflects both his commitment to advancing biotechnology and his passion for navigation.
                 </p>
               </div>
             </div>
