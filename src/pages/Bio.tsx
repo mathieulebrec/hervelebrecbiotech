@@ -46,7 +46,7 @@ const timelineData = [
   {
     step: 6,
     title: "Consulting & Leadership",
-    description: "Advises biotech programs; co-chairs HESI Immunosafety, serves as SOT Biotechnology VP Elect; 60 publications.",
+    description: "Advises pharma and biotech programs; co-chairs HESI Immunosafety Technical Committee, serves as SOT Biotechnology Specialty Section President; 60+ publications.",
     icon: Users,
     color: "green" as const,
   },
