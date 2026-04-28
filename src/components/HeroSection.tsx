@@ -4,7 +4,7 @@ import hervePortrait from "@/assets/herve-portrait.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-hero-gradient min-h-[85vh] pt-28 sm:pt-32 pb-12 overflow-hidden">
+    <section className="relative bg-hero-gradient min-h-screen pt-32 sm:pt-36 pb-16 overflow-hidden flex items-center">
       {/* Minimal hex texture — very low opacity */}
       <div className="absolute inset-0 opacity-[0.015]" style={{
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 8 L68 24 L68 56 L40 72 L12 56 L12 24Z' fill='none' stroke='%23a0c4c8' stroke-width='0.4'/%3E%3C/svg%3E")`,
