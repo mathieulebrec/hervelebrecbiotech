@@ -45,20 +45,31 @@ const ContactSection = () => {
 
     setStatus("sending");
 
-    // Build mailto as submission mechanism
-    const subject = encodeURIComponent(
-      `HL Toxicology inquiry from ${result.data.firstName} ${result.data.lastName}`
-    );
-    const body = encodeURIComponent(
-      `Name: ${result.data.firstName} ${result.data.lastName}\nEmail: ${result.data.email}\n\n${result.data.message}`
-    );
-
     try {
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-      // Give the mail client a moment to open
-      await new Promise((resolve) => setTimeout(resolve, 800));
-      setStatus("success");
-      toast.success("Your email client has been opened with the message.");
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7deb0d3a-db3c-4334-8a0f-cd99786dbf25",
+          subject: `HL Toxicology inquiry from ${result.data.firstName} ${result.data.lastName}`,
+          from_name: `${result.data.firstName} ${result.data.lastName}`,
+          name: `${result.data.firstName} ${result.data.lastName}`,
+          email: result.data.email,
+          message: result.data.message,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setStatus("success");
+        toast.success("Your message has been sent.");
+      } else {
+        setStatus("error");
+        toast.error("Something went wrong. Please email us directly.");
+      }
     } catch {
       setStatus("error");
       toast.error("Something went wrong. Please email us directly.");
@@ -83,10 +94,10 @@ const ContactSection = () => {
             <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
               <CheckCircle2 className="w-7 h-7 text-primary" />
             </div>
-            <h2 className="text-2xl font-bold text-foreground">Message prepared</h2>
+            <h2 className="text-2xl font-bold text-foreground">Message sent</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Your email client should have opened with the message. If it didn't,
-              you can reach us directly at{" "}
+              Thanks for reaching out — we'll get back to you shortly. You can also
+              reach us directly at{" "}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary hover:underline">
                 {CONTACT_EMAIL}
               </a>
@@ -235,7 +246,7 @@ const ContactSection = () => {
               {status === "sending" ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
-                  Opening email client…
+                  Sending…
                 </>
               ) : (
                 <>
