@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import hexLogo from "@/assets/hex-logo.png";
 
-const CONTACT_EMAIL = "lebrecherve@gmail.com";
+const CONTACT_EMAIL = "mathieulebrec@gmail.com";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
